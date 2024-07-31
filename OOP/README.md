@@ -1,5 +1,7 @@
 ## Some fundmentals and basics
 
-ctor + tabtab  => A shrotcut for the contructor
+`ctor + tabtab` => A shortcut for the constructor.
 
-When creating an object, at C# by default it has a default constructor, even if you didn't create a constructor inside the class.
+Type (prop) and tabtab as a shortcut for setters and getters.
+
+In C#, a default constructor is automatically created for an object, even if you didn't explicitly define one inside the class.
