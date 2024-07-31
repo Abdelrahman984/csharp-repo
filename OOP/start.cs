@@ -1,29 +1,45 @@
-using System;
-using System.Security.AccessControl;
+namespace ConsoleApp1;
 
-namespace OOP
+public class Student
 {
-    class Program
+    // The constructor
+    public Student()
     {
-        public static void Main(string[] args)
-        {
-            Car myCar = new Car();
-            myCar.Make = "Oldsmobile";
-            myCar.Color = "White";
-            
-            Console.WriteLine("{0} {1}", 
-                myCar.Make,
-                myCar.Color);
-        }
-    };
-
-    class Car
-    {
-        // Type (prop) and tabtab for fast typing
-        public string Make { get; set; }
-        public string Model { get; set; }
-        public int Year { get; set; }
-        public string Color { get; set; }
+        
     }
-}
 
+    
+    
+    /*
+     Auto-implemented property
+     * set: Allows modifying the value of the property.
+       This property can be read and written to at any time.
+     */
+    public string Adress { get; set; }
+
+
+    
+    /*
+     * init: Allows setting the value of the property,
+       but only during object initialization
+        (e.g., in the constructor or an object initializer).
+       After the object is initialized, the property becomes read-only.
+     */
+    public int Adge { get; init; }
+    
+    // Implemented property
+    private string _name;
+    public string Name
+    {
+        get
+        {
+            return _name;
+        }
+
+        set
+        {
+            _name = value;
+        }
+    }
+    
+}
