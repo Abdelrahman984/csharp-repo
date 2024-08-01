@@ -13,4 +13,40 @@ C# uses the same data types as C++ and Python, but it is a statically typed lang
 
 All other datatypes are the same as C++.
 
-### Understanding Classes
+### Constant vs READ-Only
+
+In C#, there are two ways to declare and use immutable variables: `const` and `readonly`.
+
+#### Constant (`const`)
+
+A `const` variable is a compile-time constant, meaning its value cannot be changed once it is assigned. It is implicitly static and must be assigned a value at the time of declaration. The value of a `const` variable is determined at compile-time and cannot be modified during runtime.
+
+The syntax for declaring a `const` variable is as follows:
+
+```csharp
+const dataType variableName = value;
+```
+
+#### Read-Only (`readonly`)
+
+A `readonly` variable is a runtime constant, meaning its value can only be assigned at runtime or in a constructor. It can be assigned a value either at the time of declaration or within the constructor of the class. Once assigned, the value of a `readonly` variable cannot be changed.
+
+The syntax for declaring a `readonly` variable is as follows:
+
+```csharp
+readonly dataType variableName;
+```
+
+Note that a `readonly` variable can only be assigned a value in the constructor or at the time of declaration.
+
+The main difference between `const` and `readonly` is that `const` variables are evaluated at compile-time, while `readonly` variables are evaluated at runtime. Additionally, `const` variables are implicitly static, whereas `readonly` variables can be instance-specific.
+
+### Ref vs Out
+
+In C#, both `ref` and `out` are used for passing arguments by reference, but they have some differences:
+
+- `ref` is used to pass a variable by reference to a method. The variable must be initialized before passing it as a `ref` argument. The method can modify the value of the variable, and the changes will be reflected outside the method.
+
+- `out` is similar to `ref`, but it is used when the method needs to return multiple values. The variable passed as an `out` argument does not need to be initialized before passing it. The method must assign a value to the `out` parameter before it returns.
+
+In summary, `ref` is used when you want to pass a variable by reference and allow the method to modify its value, while `out` is used when you want the method to return multiple values.

@@ -1,7 +1,36 @@
 ## Some fundmentals and basics
 
+Pascal Case: The first letter of each word is capitalized, and it is mostly used in .NET.
+
+Camel Case: The first letter of the first word is lowercase, and the first letter of each subsequent concatenated word is capitalized.
+
 `ctor + tabtab` => A shortcut for the constructor.
 
 Type (prop) and tabtab as a shortcut for setters and getters.
 
 In C#, a default constructor is automatically created for an object, even if you didn't explicitly define one inside the class.
+
+## Access Modifiers
+
+1. Public: Allows access from any code in the program, any project.
+2. Internal: Allows access only within the same project (layer).
+3. Private: Allows access only within the same class.
+
+- Private class must be inside public or Internal class, or it will give you an error
+
+---
+
+## Static Class vs Non-Static Class
+
+In C#, a class can be either static or non-static.
+
+A static class is a class that cannot be instantiated and is typically used to group related utility methods or constants. Static classes cannot be inherited or used as a base class. To access the members of a static class, you can directly use the class name followed by the member name, so it's constructor runs only one time on the whole program.
+
+On the other hand, a non-static class is a class that can be instantiated and used to create objects. Non-static classes can be inherited and used as a base class. To access the members of a non-static class, you need to create an instance of the class and use the instance to access the members.
+
+When deciding whether to use a static class or a non-static class, consider the following:
+
+- Use a static class when you have a group of related utility methods or constants that do not require any state or instance-specific behavior.
+- Use a non-static class when you need to create objects and have instance-specific behavior or state.
+
+Remember, a static class cannot contain instance members, and a non-static class cannot contain static members, and static can't access or see non-static members
