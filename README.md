@@ -50,3 +50,36 @@ In C#, both `ref` and `out` are used for passing arguments by reference, but the
 - `out` is similar to `ref`, but it is used when the method needs to return multiple values. The variable passed as an `out` argument does not need to be initialized before passing it. The method must assign a value to the `out` parameter before it returns.
 
 In summary, `ref` is used when you want to pass a variable by reference and allow the method to modify its value, while `out` is used when you want the method to return multiple values.
+
+---
+
+## String vs String Builder
+
+In C#, both string and StringBuilder are used to work with sequences of characters, but they have different characteristics and use cases:
+
+### string
+
+- Immutable: Once a string object is created, it cannot be changed. Any operation that appears to modify a string actually creates a new string object.
+- Performance: Due to immutability, operations that modify strings (like concatenation) can be inefficient because they involve creating new strings and copying data multiple times.
+- Usage: Ideal for scenarios where the string value is not expected to change frequently, such as working with constants, configuration settings, or passing string data between methods.
+
+### StringBuilder
+
+- Mutable: A StringBuilder object can be modified without creating new objects. It maintains a dynamic array of characters that can grow as needed.
+- Performance: More efficient for scenarios involving extensive string manipulation, such as building a string through multiple concatenations or appending operations.
+- Usage: Ideal for scenarios where the string is expected to change frequently, such as generating reports, building dynamic SQL queries, or processing large text data.
+
+Example for String Builder
+
+```cs
+StringBuilder sb = new StringBuilder("Hello");
+sb.Append(" World"); // Modifies the existing StringBuilder object
+sb.Append("!"); // Modifies the existing StringBuilder object
+Console.WriteLine(sb.ToString()); // Output: Hello World!
+```
+
+**Key Differences:**
+
+- Memory Allocation: string operations can lead to multiple memory allocations, while StringBuilder minimizes this by reallocating only when its internal buffer is exceeded.
+- Performance: For large or numerous modifications, StringBuilder is generally more efficient than string.
+- Thread Safety: string is inherently thread-safe due to its immutability. StringBuilder is not thread-safe by default and should be used with caution in multi-threaded environments unless synchronized externally.
