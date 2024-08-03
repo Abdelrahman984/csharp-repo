@@ -12,7 +12,7 @@ C# uses the same data types as C++ and Python, but it is a statically typed lang
 
 All other datatypes are the same as C++.
 
- `DateTime name = DateTime.Now`: This helps you to know day date/time with different formats and Methods
+`DateTime name = DateTime.Now`: This helps you to know day date/time with different formats and Methods
 
 ### Constant vs READ-Only
 
@@ -84,3 +84,19 @@ Console.WriteLine(sb.ToString()); // Output: Hello World!
 - Memory Allocation: string operations can lead to multiple memory allocations, while StringBuilder minimizes this by reallocating only when its internal buffer is exceeded.
 - Performance: For large or numerous modifications, StringBuilder is generally more efficient than string.
 - Thread Safety: string is inherently thread-safe due to its immutability. StringBuilder is not thread-safe by default and should be used with caution in multi-threaded environments unless synchronized externally.
+
+---
+
+## Boxing in C#
+
+**Definition**: Boxing is the process of converting a value type (e.g., int, char, struct) to a reference type (i.e., object).
+
+**Purpose**: Boxing is used to treat value types as objects, enabling them to be used in places where an object is required, such as in collections like ArrayList or Hashtable.
+
+**Mechanism**:
+
+A value type is allocated on the stack.
+When boxed, a new object is allocated on the heap, and the value is copied from the stack to the heap.
+The reference to the heap object is then used in place of the value type.
+
+To unbox it, use typecasting while performing a specific operation.
