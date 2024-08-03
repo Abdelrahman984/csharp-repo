@@ -60,7 +60,7 @@ In C#, both abstract classes and interfaces are used to define methods that must
 
 **Interface**
 
-- Definition: An interface only contains the declaration of methods, properties, events, or indexers, without any implementation.
+- Definition: An interface only contains the declaration of methods, properties, events, or indexers, without any implementation, but in C# 8, it can contains Implementations.
 - Inheritance: A class can implement multiple interfaces.
 - Access Modifiers: All members of an interface are public by default and cannot have access modifiers.
 - Fields: Interfaces cannot have fields.
