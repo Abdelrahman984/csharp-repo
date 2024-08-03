@@ -44,3 +44,31 @@ C# doesn't allow a single class to inherit more than one class
 
 **Override**
 The `override` keyword is used to define a method in a derived class that overrides a method with the same name and signature in its base class. This is commonly used to implement polymorphism (Virtual Methods) in object-oriented programming.
+
+## Abstraction vs Interface
+
+In C#, both abstract classes and interfaces are used to define methods that must be implemented by derived classes, but they have some key differences:
+
+**Abstract Class**
+
+- Definition: An abstract class can have both abstract methods (without implementation) and concrete methods (with implementation).
+- Inheritance: A class can inherit only one abstract class.
+- Access Modifiers: Abstract classes can have access modifiers for the methods and properties.
+- Fields: Abstract classes can have fields (variables).
+- Constructor: Abstract classes can have constructors.
+- Implementation: Methods in an abstract class can be partially implemented, allowing some common functionality to be shared.
+
+**Interface**
+
+- Definition: An interface only contains the declaration of methods, properties, events, or indexers, without any implementation.
+- Inheritance: A class can implement multiple interfaces.
+- Access Modifiers: All members of an interface are public by default and cannot have access modifiers.
+- Fields: Interfaces cannot have fields.
+- Constructor: Interfaces cannot have constructors.
+- Implementation: Interfaces cannot provide any implementation; all methods must be implemented by the derived class.
+
+When to Use Each:
+
+- Abstract Class: Use an abstract class when you want to provide a common base class with some shared functionality that derived classes can use or override. It's ideal when classes share a common base and require a common implementation.
+
+- Interface: Use an interface when you want to define a contract that multiple classes can implement, allowing for a more flexible design. It's ideal when you need to ensure that certain methods are implemented by a class without dictating how the class should do so.
