@@ -34,3 +34,13 @@ When deciding whether to use a static class or a non-static class, consider the 
 - Use a non-static class when you need to create objects and have instance-specific behavior or state.
 
 Remember, a static class cannot contain instance members, and a non-static class cannot contain static members, and static can't access or see non-static members
+
+---
+
+You can't Create a direct Instance or Object from Abstraction Class (Parent class)
+C# doesn't allow a single class to inherit more than one class
+
+---
+
+**Override**
+The `override` keyword is used to define a method in a derived class that overrides a method with the same name and signature in its base class. This is commonly used to implement polymorphism (Virtual Methods) in object-oriented programming.
