@@ -1,0 +1,14 @@
+/home/abdullah/RiderProjects/PasswordManager/CSharpConsoleProjects/bin/Debug/net8.0/CSharpConsoleProjects
+/home/abdullah/RiderProjects/PasswordManager/CSharpConsoleProjects/bin/Debug/net8.0/CSharpConsoleProjects.deps.json
+/home/abdullah/RiderProjects/PasswordManager/CSharpConsoleProjects/bin/Debug/net8.0/CSharpConsoleProjects.runtimeconfig.json
+/home/abdullah/RiderProjects/PasswordManager/CSharpConsoleProjects/bin/Debug/net8.0/CSharpConsoleProjects.dll
+/home/abdullah/RiderProjects/PasswordManager/CSharpConsoleProjects/bin/Debug/net8.0/CSharpConsoleProjects.pdb
+/home/abdullah/RiderProjects/PasswordManager/CSharpConsoleProjects/obj/Debug/net8.0/CSharpConsoleProjects.GeneratedMSBuildEditorConfig.editorconfig
+/home/abdullah/RiderProjects/PasswordManager/CSharpConsoleProjects/obj/Debug/net8.0/CSharpConsoleProjects.AssemblyInfoInputs.cache
+/home/abdullah/RiderProjects/PasswordManager/CSharpConsoleProjects/obj/Debug/net8.0/CSharpConsoleProjects.AssemblyInfo.cs
+/home/abdullah/RiderProjects/PasswordManager/CSharpConsoleProjects/obj/Debug/net8.0/CSharpConsoleProjects.csproj.CoreCompileInputs.cache
+/home/abdullah/RiderProjects/PasswordManager/CSharpConsoleProjects/obj/Debug/net8.0/CSharpConsoleProjects.dll
+/home/abdullah/RiderProjects/PasswordManager/CSharpConsoleProjects/obj/Debug/net8.0/refint/CSharpConsoleProjects.dll
+/home/abdullah/RiderProjects/PasswordManager/CSharpConsoleProjects/obj/Debug/net8.0/CSharpConsoleProjects.pdb
+/home/abdullah/RiderProjects/PasswordManager/CSharpConsoleProjects/obj/Debug/net8.0/CSharpConsoleProjects.genruntimeconfig.cache
+/home/abdullah/RiderProjects/PasswordManager/CSharpConsoleProjects/obj/Debug/net8.0/ref/CSharpConsoleProjects.dll
