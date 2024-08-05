@@ -72,3 +72,60 @@ When to Use Each:
 - Abstract Class: Use an abstract class when you want to provide a common base class with some shared functionality that derived classes can use or override. It's ideal when classes share a common base and require a common implementation.
 
 - Interface: Use an interface when you want to define a contract that multiple classes can implement, allowing for a more flexible design. It's ideal when you need to ensure that certain methods are implemented by a class without dictating how the class should do so.
+
+## Delegates
+
+Delegates are a powerful feature in C# that allow you to treat methods as objects. They provide a way to pass methods as parameters to other methods, store them in variables, and invoke them when needed. Delegates are commonly used in event handling and callback scenarios.
+
+To define a delegate, you need to specify the return type and parameter types of the methods it can reference. Here's an example:
+
+```csharp
+delegate int CalculateDelegate(int num1, int num2);
+```
+
+In the above example, we define a delegate named `CalculateDelegate` that can reference methods with the signature `int MethodName(int num1, int num2)`. This means that any method that matches this signature can be assigned to a variable of type `CalculateDelegate`.
+
+Delegates can be used to achieve callback functionality. Here's an example that demonstrates the usage of delegates:
+
+```csharp
+static void Main(string[] args)
+{
+    int one = 5, two = 7;
+    CalulateWithDelegate(one, two, sum);
+}
+
+static void CalulateWithDelegate(int num1, int num2, CalculateDelegate dlg)
+{
+    Console.WriteLine($"Result = {dlg(num1, num2)}");
+}
+
+static int sum(int num1, int num2)
+{
+    return num1 + num2;
+}
+```
+
+In the above example, we define a method `CalulateWithDelegate` that takes two numbers and a delegate as parameters. The delegate is then invoked within the method to perform the calculation. The `sum` method is passed as an argument to the `CalulateWithDelegate` method, and it is invoked through the delegate.
+
+Delegates provide a flexible way to decouple the caller and the method being called, allowing for dynamic method invocation and extensibility.
+
+```csharp
+delegate int CalculateDelegate(int num1, int num2);
+
+static void Main(string[] args)
+{
+    int one = 5, two = 7;
+    // CalculateDelegate dlg = new CalculateDelegate(sum);  Another way
+    CalulateWithDelegate(one, two, sum);
+}
+
+static void CalulateWithDelegate(int num1, int num2, CalculateDelegate dlg)
+{
+    Console.WriteLine($"Result = {dlg(num1, num2)}");
+}
+
+static int sum(int num1, int num2)
+{
+    return num1 + num2;
+}
+```
