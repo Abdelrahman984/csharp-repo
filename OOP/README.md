@@ -129,3 +129,78 @@ static int sum(int num1, int num2)
     return num1 + num2;
 }
 ```
+
+We can use this syntax for delegates
+
+```csharp
+delegate int CalculateDelegate(int num1, int num2);
+
+int num1 = 5, num2 = 7;
+
+CalulateWithDelegate(one, two, delegate (int num1, int num2) {return num1 + num2});
+
+// Alternatively, you can use a lambda expression
+
+CalulateWithDelegate(num1, num2, (int x, int y) => x + y);
+
+// Another Way
+CalulateWithDelegate(num1, num2, (num1, num2) => num1 + num2);
+
+```
+
+## Events
+
+Events are a fundamental feature of C# that allow a class to notify other classes or objects when something of interest occurs. Events are based on delegates, which define the signature of the method that will handle the event.
+
+Here's an example of how to declare and use an event in C#:
+
+```csharp
+public class Employee
+{
+    // Declare a delegate that defines the signature of the event handler
+    public delegate void EmployeeCalculatedHandler(Employee employee, int salary);
+
+    // Declare the event using the delegate
+    public static event EmployeeCalculatedHandler EmployeeSalaryCalculated;
+
+    // Method to calculate salary and trigger the event
+    public void CalculateSalary(int baseSalary, int bonus)
+    {
+        int salary = baseSalary + bonus;
+
+        // Trigger the event
+        OnEmployeeSalaryCalculated(this, salary);
+    }
+
+    // Protected virtual method to trigger the event
+    protected virtual void OnEmployeeSalaryCalculated(Employee employee, int salary)
+    {
+        EmployeeSalaryCalculated?.Invoke(employee, salary);
+    }
+}
+```
+
+In this example:
+
+- `EmployeeCalculatedHandler` is a delegate that defines the method signature for the event handler.
+- `EmployeeSalaryCalculated` is an event that uses the `EmployeeCalculatedHandler` delegate.
+- `CalculateSalary` is a method that calculates the employee's salary and triggers the `EmployeeSalaryCalculated` event.
+- `OnEmployeeSalaryCalculated` is a protected virtual method that checks if there are any subscribers to the event and invokes it if there are.
+
+This setup allows other classes to subscribe to the `EmployeeSalaryCalculated` event and handle it when it's triggered.
+
+In C#, Invoke is a method used to call (or "invoke") all the methods that have been subscribed to a delegate or an event. When you have an event, multiple methods can subscribe to it, and when the event is triggered, the Invoke method calls all these subscribed methods in the order they were added.
+
+Here’s a detailed explanation:
+
+Delegates and Events
+A delegate is a type that represents references to methods with a specific parameter list and return type. Events are based on delegates and are used to provide notifications.
+
+Using Invoke with Events
+When you declare an event using a delegate, you can use the Invoke method to call all the event handlers that have subscribed to the event. The Invoke method checks if there are any subscribers and then calls each of the subscribed methods with the provided arguments.
+
+Why Use Invoke?
+Using Invoke ensures that all methods subscribed to the event are called with the provided arguments. It also provides a convenient way to check for null subscribers and avoid null reference exceptions.
+
+Null-Conditional Operator
+The null-conditional operator (?.) is used to simplify the null check before invoking the event. This operator ensures that the Invoke method is only called if EmployeeSalaryCalculated is not null, which means there are subscribers to the event. If there are no subscribers, the event is not invoked, and no exception is thrown.
