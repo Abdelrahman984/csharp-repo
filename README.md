@@ -100,3 +100,7 @@ When boxed, a new object is allocated on the heap, and the value is copied from 
 The reference to the heap object is then used in place of the value type.
 
 To unbox it, use typecasting while performing a specific operation.
+
+---
+
+## Enumerables

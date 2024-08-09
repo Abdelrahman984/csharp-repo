@@ -204,3 +204,27 @@ Using Invoke ensures that all methods subscribed to the event are called with th
 
 Null-Conditional Operator
 The null-conditional operator (?.) is used to simplify the null check before invoking the event. This operator ensures that the Invoke method is only called if EmployeeSalaryCalculated is not null, which means there are subscribers to the event. If there are no subscribers, the event is not invoked, and no exception is thrown.
+
+---
+
+A `sealed` Method is the method that can't be overriden by subclasses (derived class)
+
+```cs
+ class Parent
+ {
+
+	public virtual void  Print() => Console.WriteLine("Hello Arrow Function [gos to]");
+
+}
+ class Child: Parent
+{
+    /* Sealed Method */
+    public sealed override void Print() =>  Console.WriteLine("hello Child");
+}
+ sealed class GrandChild: Child
+{
+    public override void Print() =>  Console.WriteLine("hello GrandChild"); // invalid  Override
+
+}
+
+```
