@@ -207,6 +207,8 @@ The null-conditional operator (?.) is used to simplify the null check before inv
 
 ---
 
+## Sealed property
+
 A `sealed` Method is the method that can't be overriden by subclasses (derived class)
 
 ```cs
@@ -227,4 +229,25 @@ A `sealed` Method is the method that can't be overriden by subclasses (derived c
 
 }
 
+```
+
+### Sealed Class
+
+A sealed class is a class that can't be inherited by other classes. It is marked with the `sealed` keyword in it's declaration
+
+```csharp
+class Parent
+{
+
+}
+
+sealed class Child : Parent
+{
+
+}
+
+class GrandChild : Child // Invalid Inheritance
+{
+
+}
 ```
