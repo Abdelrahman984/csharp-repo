@@ -103,4 +103,4 @@ To unbox it, use typecasting while performing a specific operation.
 
 ---
 
-## Enumerables
+Struct is a value type, while class is Reference type (Used as constrains with Generics)
