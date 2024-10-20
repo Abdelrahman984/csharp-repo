@@ -1,0 +1,14 @@
+C:\Users\star bussiness\Desktop\net\Day5c180\Day5c180\bin\Debug\net8.0\Day5c180.exe
+C:\Users\star bussiness\Desktop\net\Day5c180\Day5c180\bin\Debug\net8.0\Day5c180.deps.json
+C:\Users\star bussiness\Desktop\net\Day5c180\Day5c180\bin\Debug\net8.0\Day5c180.runtimeconfig.json
+C:\Users\star bussiness\Desktop\net\Day5c180\Day5c180\bin\Debug\net8.0\Day5c180.dll
+C:\Users\star bussiness\Desktop\net\Day5c180\Day5c180\bin\Debug\net8.0\Day5c180.pdb
+C:\Users\star bussiness\Desktop\net\Day5c180\Day5c180\obj\Debug\net8.0\Day5c180.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\star bussiness\Desktop\net\Day5c180\Day5c180\obj\Debug\net8.0\Day5c180.AssemblyInfoInputs.cache
+C:\Users\star bussiness\Desktop\net\Day5c180\Day5c180\obj\Debug\net8.0\Day5c180.AssemblyInfo.cs
+C:\Users\star bussiness\Desktop\net\Day5c180\Day5c180\obj\Debug\net8.0\Day5c180.csproj.CoreCompileInputs.cache
+C:\Users\star bussiness\Desktop\net\Day5c180\Day5c180\obj\Debug\net8.0\Day5c180.dll
+C:\Users\star bussiness\Desktop\net\Day5c180\Day5c180\obj\Debug\net8.0\refint\Day5c180.dll
+C:\Users\star bussiness\Desktop\net\Day5c180\Day5c180\obj\Debug\net8.0\Day5c180.pdb
+C:\Users\star bussiness\Desktop\net\Day5c180\Day5c180\obj\Debug\net8.0\Day5c180.genruntimeconfig.cache
+C:\Users\star bussiness\Desktop\net\Day5c180\Day5c180\obj\Debug\net8.0\ref\Day5c180.dll

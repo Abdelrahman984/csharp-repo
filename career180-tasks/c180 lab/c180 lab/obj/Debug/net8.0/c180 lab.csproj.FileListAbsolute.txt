@@ -1,0 +1,14 @@
+C:\Users\star bussiness\Desktop\net\c180 lab\c180 lab\bin\Debug\net8.0\c180 lab.exe
+C:\Users\star bussiness\Desktop\net\c180 lab\c180 lab\bin\Debug\net8.0\c180 lab.deps.json
+C:\Users\star bussiness\Desktop\net\c180 lab\c180 lab\bin\Debug\net8.0\c180 lab.runtimeconfig.json
+C:\Users\star bussiness\Desktop\net\c180 lab\c180 lab\bin\Debug\net8.0\c180 lab.dll
+C:\Users\star bussiness\Desktop\net\c180 lab\c180 lab\bin\Debug\net8.0\c180 lab.pdb
+C:\Users\star bussiness\Desktop\net\c180 lab\c180 lab\obj\Debug\net8.0\c180 lab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\star bussiness\Desktop\net\c180 lab\c180 lab\obj\Debug\net8.0\c180 lab.AssemblyInfoInputs.cache
+C:\Users\star bussiness\Desktop\net\c180 lab\c180 lab\obj\Debug\net8.0\c180 lab.AssemblyInfo.cs
+C:\Users\star bussiness\Desktop\net\c180 lab\c180 lab\obj\Debug\net8.0\c180 lab.csproj.CoreCompileInputs.cache
+C:\Users\star bussiness\Desktop\net\c180 lab\c180 lab\obj\Debug\net8.0\c180 lab.dll
+C:\Users\star bussiness\Desktop\net\c180 lab\c180 lab\obj\Debug\net8.0\refint\c180 lab.dll
+C:\Users\star bussiness\Desktop\net\c180 lab\c180 lab\obj\Debug\net8.0\c180 lab.pdb
+C:\Users\star bussiness\Desktop\net\c180 lab\c180 lab\obj\Debug\net8.0\c180 lab.genruntimeconfig.cache
+C:\Users\star bussiness\Desktop\net\c180 lab\c180 lab\obj\Debug\net8.0\ref\c180 lab.dll

@@ -1,0 +1,14 @@
+C:\Users\star bussiness\Desktop\net\Assiment4\Assiment4\obj\Debug\net8.0\Assiment4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\star bussiness\Desktop\net\Assiment4\Assiment4\obj\Debug\net8.0\Assiment4.AssemblyInfoInputs.cache
+C:\Users\star bussiness\Desktop\net\Assiment4\Assiment4\obj\Debug\net8.0\Assiment4.AssemblyInfo.cs
+C:\Users\star bussiness\Desktop\net\Assiment4\Assiment4\obj\Debug\net8.0\Assiment4.csproj.CoreCompileInputs.cache
+C:\Users\star bussiness\Desktop\net\Assiment4\Assiment4\bin\Debug\net8.0\Assiment4.exe
+C:\Users\star bussiness\Desktop\net\Assiment4\Assiment4\bin\Debug\net8.0\Assiment4.deps.json
+C:\Users\star bussiness\Desktop\net\Assiment4\Assiment4\bin\Debug\net8.0\Assiment4.runtimeconfig.json
+C:\Users\star bussiness\Desktop\net\Assiment4\Assiment4\bin\Debug\net8.0\Assiment4.dll
+C:\Users\star bussiness\Desktop\net\Assiment4\Assiment4\bin\Debug\net8.0\Assiment4.pdb
+C:\Users\star bussiness\Desktop\net\Assiment4\Assiment4\obj\Debug\net8.0\Assiment4.dll
+C:\Users\star bussiness\Desktop\net\Assiment4\Assiment4\obj\Debug\net8.0\refint\Assiment4.dll
+C:\Users\star bussiness\Desktop\net\Assiment4\Assiment4\obj\Debug\net8.0\Assiment4.pdb
+C:\Users\star bussiness\Desktop\net\Assiment4\Assiment4\obj\Debug\net8.0\Assiment4.genruntimeconfig.cache
+C:\Users\star bussiness\Desktop\net\Assiment4\Assiment4\obj\Debug\net8.0\ref\Assiment4.dll
